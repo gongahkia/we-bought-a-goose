@@ -2,7 +2,7 @@
 
 # We Bought A Goose
 
-Geese for SMU elearn.
+Adds geese to SMU elearn.
 
 ![](sample/we-bought-a-goose.jpg)
 
