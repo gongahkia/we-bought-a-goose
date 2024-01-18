@@ -1,8 +1,12 @@
 // FUA
-    // continue debugging
-    // debug why it cant even seem to find the pictures for each course
-    // i tested alr, need to change both the image src and srcset, so issue is with idenfityfing correct img
-    // consider adding animated waddling duck and cat sprites across the screen instead or replacing user cursor with a duck if main idea does not work
+    // PRIMARY
+        // continue debugging
+        // debug why it cant even seem to find the pictures for each course
+        // i tested alr, need to change both the image src and srcset, so issue is with idenfityfing correct img
+    // SECONDARY
+        // consider adding animated waddling duck and cat sprites across the screen instead or replacing user cursor with a duck if main idea does not work
+        // work out what sprites i need and pair down size of sprite directory
+        // remove added sprites if not using, consider similar to chillquarium
 
 alert("QUACK");
 
