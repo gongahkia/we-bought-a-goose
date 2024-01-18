@@ -6,6 +6,7 @@
         // work out how to change images on multiple pages
             // change image for elearn login https://elearn.smu.edu.sg/d2l/loginh/ to ducks
     // SECONDARY
+        // find and add more goose sprites to add to the extension
         // consider adding animated waddling duck and cat sprites across the screen instead or replacing user cursor with a duck if main idea does not work
         // work out what sprites i need and pair down size of sprite directory
         // remove added sprites if not using, consider similar to chillquarium
