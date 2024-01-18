@@ -1,6 +1,7 @@
 // FUA
     // PRIMARY
         // continue debugging
+            // further debug
             // parse entire dom structure to determine the shadowroot structure and parse up down
             // ensure im actually calling the correct div of class d2l-widget and d2l-tile
             // i tested alr, need to change both the image src and srcset, so issue is with identifying correct img
@@ -15,20 +16,47 @@ var newImageUrlSrcSet = 'https://static1.thegamerimages.com/wordpress/wp-content
 alert("QUACK");
 
 
+/*
 var mainBody = document.querySelector("d2l-expand-collapse-content"); // this works and i can call this
 alert(mainBody);
+*/
 
+var root1 = document.querySelector(".d2l-widget.d2l-tile d2l-my-courses");
+var root2 = root1.shadowRoot;
+var root3 = root2.querySelector("d2l-my-courses-container");
+var root4 = root3.shadowRoot;
+var root5 = root4.querySelector("d2l-tabs d2l-my-courses-content");
+var root6 = root5.shadowRoot;
+var root7 = root6.querySelector("d2l-my-courses-card-grid");
+var root8 = root7.shadowRoot;
+var root9 = root8.querySelector("d2l-enrollment-card");
+var root10 = root9.shadowRoot;
+var root11 = root10.querySelector("d2l-organization-image");
+var root12 = root11.shadowRoot;
+var root13 = root12.querySelector("d2l-course-image");
+var root14 = root13.shadowRoot;
+alert(root14);
+var desiredImage = root14.querySelector("img");
+alert(desiredImage);
+desiredImage.src = newImageUrlSrc;
+desiredImage.src = newImageUrlSrcSet;
+
+
+/*
 var root = document.querySelector(".d2l-widget.d2l-tile"); // need to check whether im getting the first instance of the right thing
 alert(root);
-
 if (root) {
-    var root2 = root.querySelector("d2l-expand-collapse-content");
+    var root2 = root.querySelector(".d2l-widget-content");
+    alert(root2);
     if (root2) {
         var root3 = root2.querySelector("d2l-widget-content-padding");
+        alert(root3);
         if (root3) {
             var root4 = root3.querySelector("d2l-my-courses");
+            alert(root4);
             if (root4) {
                 var root5 = root4.shadowRoot;
+                alert(root5);
                 if (root5) {
                     var root6 = root5.querySelector("d2l-my-courses-container");
                     if (root6) {
@@ -51,7 +79,30 @@ if (root) {
                                                         var root15 = root14.querySelector("d2l-enrollment-card");
                                                         if (root15) {
                                                             var root16 = root15.shadowRoot;
-                                                            // add code here
+                                                            if (root16) {
+                                                                var root17 = root16.querySelector("d2l-card");
+                                                                if (root17) {
+                                                                    var root18 = root17.querySelector('div[slot="header"]');
+                                                                    if (root18) {
+                                                                        var root19 = root18.querySelector(".d2l-enrollment-card-image-container");
+                                                                        if (root19) {
+                                                                            var root20 = root19.querySelector("d2l-organization-image");
+                                                                            if (root20) {
+                                                                                var root21 = root20.shadowRoot;
+                                                                                if (root21) {
+                                                                                    var root22 = root21.querySelector("d2l-course-image");
+                                                                                    if (root22) {
+                                                                                        var root23 = root22.shadowRoot;
+                                                                                        if (root23) {
+                                                                                            alert(root23.src);
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -67,6 +118,7 @@ if (root) {
         }
     }
 }
+*/
 
 /*
 document.addEventListener('DOMContentLoaded', function() {
