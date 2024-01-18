@@ -5,6 +5,8 @@
         // might need to add a check for whether a div in the header next to the image has already been added to avoid multiple university links
         // work out how to change images on multiple pages
             // change image for elearn login https://elearn.smu.edu.sg/d2l/loginh/ to ducks
+        // debug
+            // work out why this doesn't work for Chrome 
     // SECONDARY
         // find and add more goose sprites to add to the extension
         // consider adding animated waddling duck and cat sprites across the screen instead or replacing user cursor with a duck if main idea does not work
