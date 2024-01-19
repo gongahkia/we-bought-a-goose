@@ -1,12 +1,10 @@
 // FUA
     // PRIMARY
-        // rework the popup.html page to be a gooose jpeg whose mouth open when its hovered over and clicked
-            // continue working on popup.html and add a png of goose becoming evil when clicked
-            // add text that the goose makes when hovered over, in popup.html
         // add a check for whether a div in the header next to the image has already been added to avoid multiple university links
         // work out how to change images on multiple pages
             // change image for elearn login https://elearn.smu.edu.sg/d2l/loginh/ to ducks
         // edit installation method on readme.md accordingly
+        // check for overlaps in gifs added
     // SECONDARY
         // find and add more goose sprites to add to the extension
             // then can just translate sprites easily for pseudo-animation when i spawn goose in
@@ -17,7 +15,7 @@
 
 // ---------- PRESETS -----------
 
-var gooseLinkArray = [
+const gooseLinkArray = [
                         "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2019/10/Untitled-Goose-Game-Goose-In-Sherlock-Holmes-Outfit.jpg",
                         "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2020/08/goose-battle-royale.jpeg",
                         "https://press-start.com.au/wp-content/uploads/2019/09/Untitled-Goose-GAMe-review-1-770x433.jpg",
@@ -49,7 +47,6 @@ var gooseLinkArray = [
                         "https://i.pinimg.com/originals/d1/f1/e5/d1f1e5e02fb086be13d4074176b5499d.gif",
                         "https://i.makeagif.com/media/9-30-2019/dGK0jh.gif",
                         "https://miro.medium.com/v2/resize:fit:1400/1*LKBTInynDNhExI83ceAc4w.gif",
-                        "https://i.imgur.com/YyWp9OU.gifv",
                         "https://i.redd.it/j8f7min9o3q51.gif",
                         "https://i.imgur.com/wQfjkmv.gif",
                         "https://i.makeagif.com/media/3-27-2021/Vu090I.gif",
@@ -66,6 +63,10 @@ alert("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\
 
 function gooseItUp() {
 
+    // ---------- PRESET ----------
+    
+    var varGooseLinkArray = [...gooseLinkArray];
+
     // ---------- REPLACE SCH CREST -----------
 
     const newSchImage = "https://media.tenor.com/NE4pLTL4KusAAAAC/goose-honking-goose.gif";
@@ -75,10 +76,13 @@ function gooseItUp() {
     var schImage = simplest.querySelector("img");
     schImage.src = newSchImage;
 
-    var schName = document.createElement("div");
-    schName.innerHTML = "Singapore Goose<br>University";
-    schName.style.marginLeft = "15px";
-    simplest.append(schName);
+    if (simplest.querySelector("div") === null) {
+        var schName = document.createElement("div");
+        schName.innerHTML = "Singapore Goose<br>University";
+        schName.style.marginLeft = "15px";
+        schName.id = "smu-nametag";
+        simplest.append(schName);
+    }
 
     // ---------- REPLACE COURSE IMAGES ----------
 
@@ -94,9 +98,9 @@ function gooseItUp() {
 
     root9.forEach(function (enrollmentCard) {
 
-        var seed = Math.floor(Math.random() * gooseLinkArray.length);
-        var targetURL = gooseLinkArray[seed];
-        gooseLinkArray.splice(seed,1);
+        var seed = Math.floor(Math.random() * varGooseLinkArray.length);
+        var targetURL = varGooseLinkArray[seed];
+        varGooseLinkArray.splice(seed,1);
 
         var root10 = enrollmentCard.shadowRoot;
         var root11 = root10.querySelector("d2l-organization-image");
