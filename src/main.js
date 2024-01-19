@@ -1,17 +1,7 @@
 // FUA
     // PRIMARY
-        // add a check for whether a div in the header next to the image has already been added to avoid multiple university links
-        // work out how to change images on multiple pages
-            // change image for elearn login https://elearn.smu.edu.sg/d2l/loginh/ to ducks
-        // edit installation method on readme.md accordingly
+        // see if i can add js code that adds logic within new.html to the webpage, if not just finish project
         // check for overlaps in gifs added
-    // SECONDARY
-        // find and add more goose sprites to add to the extension
-            // then can just translate sprites easily for pseudo-animation when i spawn goose in
-        // consider adding animated waddling duck and cat sprites across the screen instead or replacing user cursor with a duck if main idea does not work
-        // work out what sprites i need and pair down size of sprite directory
-        // remove added sprites if not using, consider similar to chillquarium
-        // send nichole astin for playtesting
 
 // ---------- PRESETS -----------
 
@@ -54,7 +44,9 @@ const gooseLinkArray = [
                         "https://64.media.tumblr.com/71106a78b100e4d124909550a3ac841c/7dc95329ed91814e-40/s540x810/ee58811af4f63e834ec591c7460277ac3b8ea0e2.gifv",
                         "https://64.media.tumblr.com/e945a7263be520abbbf792a5c3cf352d/7dc95329ed91814e-f8/s540x810/4d8cbde16b87983c2e8b2590782eaad4ed0ee99f.gifv",
                         "https://cdn.mos.cms.futurecdn.net/y56UfHASvAHDnqxX5eNCxY.jpg",
-                        "https://64.media.tumblr.com/451453145dc751e6eed8f7aea39cd31c/7dc95329ed91814e-5d/s540x810/9637e41644b8ef62aa42d0758eeaeb0ded72c497.gifv"
+                        "https://64.media.tumblr.com/451453145dc751e6eed8f7aea39cd31c/7dc95329ed91814e-5d/s540x810/9637e41644b8ef62aa42d0758eeaeb0ded72c497.gifv",
+                        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2t6ejMzdzc0YXYzdTJicGt0a294eWIxbmtwazRiaWJmbGNoZmtuYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/huDrF0FD1tc4do9PN8/giphy.gif",
+                        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmthbTdramxtdWx1d296ODFkOGQ0NzR6ODk2bHlvcW1zNnNycXN3NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W4vBGjSEzIU1ufMxK9/giphy.gif"
 ];
 
 // ---------- TEST ----------

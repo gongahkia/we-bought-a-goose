@@ -36,6 +36,7 @@ $ make
 2. Click *load temporary add-on*.
 3. Open the `we-bought-a-goose` repo, select `manifest.json`.
 4. Open **SMU elearn**.
+5. Click the goose.
 
 ### Chrome
 
@@ -44,3 +45,4 @@ $ make
 3. Click *load unpacked*.
 4. Open the `we-bought-a-goose` repo, click *select*.
 5. Open **SMU elearn**.
+6. Click the goose.
