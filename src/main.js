@@ -1,7 +1,4 @@
-// FUA
-    // PRIMARY
-        // see if i can add js code that adds logic within new.html to the webpage, if not just finish project
-        // check for overlaps in gifs added
+// HONK HONK HONK
 
 // ---------- PRESETS -----------
 
