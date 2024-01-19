@@ -1,12 +1,15 @@
 // FUA
     // PRIMARY
-        // add a check for whether a div in the header next to the image has already been added to avoid multiple university links
         // rework the popup.html page to be a gooose jpeg whose mouth open when its hovered over and clicked
+            // continue working on popup.html and add a png of goose becoming evil when clicked
+            // add text that the goose makes when hovered over, in popup.html
+        // add a check for whether a div in the header next to the image has already been added to avoid multiple university links
         // work out how to change images on multiple pages
             // change image for elearn login https://elearn.smu.edu.sg/d2l/loginh/ to ducks
         // edit installation method on readme.md accordingly
     // SECONDARY
         // find and add more goose sprites to add to the extension
+            // then can just translate sprites easily for pseudo-animation when i spawn goose in
         // consider adding animated waddling duck and cat sprites across the screen instead or replacing user cursor with a duck if main idea does not work
         // work out what sprites i need and pair down size of sprite directory
         // remove added sprites if not using, consider similar to chillquarium
@@ -45,7 +48,16 @@ var gooseLinkArray = [
                         "https://cdn.dribbble.com/users/568868/screenshots/15452615/media/720f2651bb11c0e02c092cf56310b0bc.gif",
                         "https://i.pinimg.com/originals/d1/f1/e5/d1f1e5e02fb086be13d4074176b5499d.gif",
                         "https://i.makeagif.com/media/9-30-2019/dGK0jh.gif",
-                        "https://miro.medium.com/v2/resize:fit:1400/1*LKBTInynDNhExI83ceAc4w.gif"
+                        "https://miro.medium.com/v2/resize:fit:1400/1*LKBTInynDNhExI83ceAc4w.gif",
+                        "https://i.imgur.com/YyWp9OU.gifv",
+                        "https://i.redd.it/j8f7min9o3q51.gif",
+                        "https://i.imgur.com/wQfjkmv.gif",
+                        "https://i.makeagif.com/media/3-27-2021/Vu090I.gif",
+                        "https://steamuserimages-a.akamaihd.net/ugc/2041867026439591880/387B6263E5C32C0CF16D80721DA3A2BD0DD95B6A/",
+                        "https://64.media.tumblr.com/71106a78b100e4d124909550a3ac841c/7dc95329ed91814e-40/s540x810/ee58811af4f63e834ec591c7460277ac3b8ea0e2.gifv",
+                        "https://64.media.tumblr.com/e945a7263be520abbbf792a5c3cf352d/7dc95329ed91814e-f8/s540x810/4d8cbde16b87983c2e8b2590782eaad4ed0ee99f.gifv",
+                        "https://cdn.mos.cms.futurecdn.net/y56UfHASvAHDnqxX5eNCxY.jpg",
+                        "https://64.media.tumblr.com/451453145dc751e6eed8f7aea39cd31c/7dc95329ed91814e-5d/s540x810/9637e41644b8ef62aa42d0758eeaeb0ded72c497.gifv"
 ];
 
 // ---------- TEST ----------
