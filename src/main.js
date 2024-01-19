@@ -1,23 +1,16 @@
 // FUA
     // PRIMARY
-        // work out how to enable hot reloading of lazy loaded images to ensure i dont need to manually reload the extension to show goose
-            // perhaps consider adding a check for whether DOM content has loaded
-        // might need to add a check for whether a div in the header next to the image has already been added to avoid multiple university links
+        // add a check for whether a div in the header next to the image has already been added to avoid multiple university links
+        // rework the popup.html page to be a gooose jpeg whose mouth open when its hovered over and clicked
         // work out how to change images on multiple pages
             // change image for elearn login https://elearn.smu.edu.sg/d2l/loginh/ to ducks
-        // debug
-            // work out why this doesn't work for Chrome 
+        // edit installation method on readme.md accordingly
     // SECONDARY
         // find and add more goose sprites to add to the extension
         // consider adding animated waddling duck and cat sprites across the screen instead or replacing user cursor with a duck if main idea does not work
         // work out what sprites i need and pair down size of sprite directory
         // remove added sprites if not using, consider similar to chillquarium
         // send nichole astin for playtesting
-
-/*
-var mainBody = document.querySelector("d2l-expand-collapse-content"); // this works and i can call this
-alert(mainBody);
-*/
 
 // ---------- PRESETS -----------
 
@@ -57,65 +50,59 @@ var gooseLinkArray = [
 
 // ---------- TEST ----------
 
-alert("QUACK");
+alert("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⡿⢋⣩⣭⣶⣶⣮⣭⡙⠿⣿⣿⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⠿⣋⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡙⢿⣿⣿⣿\n⣿⣿⣿⣿⣿⡃⠄⠹⡿⣿⣿⣿⣿⠟⠛⣿⣿⣿⣿⣷⡌⢿⣿⣿\n⣿⣿⣿⣿⣿⠐⣠⡶⣶⣲⡎⢻⣿⣤⣴⣾⣿⣿⣿⣿⣿⠸⣿⣿\n⣿⠟⣋⡥⡶⣞⡯⣟⣾⣺⢽⡧⣥⣭⣉⢻⣿⣿⣿⣿⣿⣆⢻⣿\n⡃⣾⢯⢿⢽⣫⡯⣷⣳⢯⡯⠯⠷⠻⠞⣼⣿⣿⣿⣿⣿⣿⡌⣿\n⣦⣍⡙⠫⠛⠕⣋⡓⠭⣡⢶⠗⣡⣶⡝⣿⣿⣿⣿⣿⣿⣿⣧⢹\n⣿⣿⣿⣿⣿⣿⣘⣛⣋⣡⣵⣾⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⢸\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⢸\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⢸\n\n\t\t\t   H O N K");
 
-// ---------- REPLACE SCH CREST -----------
+function gooseItUp() {
 
-const newSchImage = "https://media.tenor.com/NE4pLTL4KusAAAAC/goose-honking-goose.gif";
-var simple = document.querySelector("d2l-navigation-link-image");
-var simpler = simple.shadowRoot;
-var simplest = simpler.querySelector(".d2l-navigation-link-image-container");
-var schImage = simplest.querySelector("img");
-schImage.src = newSchImage;
+    // ---------- REPLACE SCH CREST -----------
 
-var schName = document.createElement("div");
-schName.innerHTML = "Singapore Goose<br>University";
-schName.style.marginLeft = "15px";
-simplest.append(schName);
+    const newSchImage = "https://media.tenor.com/NE4pLTL4KusAAAAC/goose-honking-goose.gif";
+    var simple = document.querySelector("d2l-navigation-link-image");
+    var simpler = simple.shadowRoot;
+    var simplest = simpler.querySelector(".d2l-navigation-link-image-container");
+    var schImage = simplest.querySelector("img");
+    schImage.src = newSchImage;
 
-// ---------- REPLACE COURSE IMAGES ----------
+    var schName = document.createElement("div");
+    schName.innerHTML = "Singapore Goose<br>University";
+    schName.style.marginLeft = "15px";
+    simplest.append(schName);
 
-var root1 = document.querySelector(".d2l-widget.d2l-tile d2l-my-courses");
-var root2 = root1.shadowRoot;
-var root3 = root2.querySelector("d2l-my-courses-container");
-var root4 = root3.shadowRoot;
-var root5 = root4.querySelector("d2l-tabs d2l-my-courses-content");
-var root6 = root5.shadowRoot;
-var root7 = root6.querySelector("d2l-my-courses-card-grid");
-var root8 = root7.shadowRoot;
-var root9 = root8.querySelectorAll("d2l-enrollment-card");
+    // ---------- REPLACE COURSE IMAGES ----------
 
-root9.forEach(function (enrollmentCard) {
+    var root1 = document.querySelector(".d2l-widget.d2l-tile d2l-my-courses");
+    var root2 = root1.shadowRoot;
+    var root3 = root2.querySelector("d2l-my-courses-container");
+    var root4 = root3.shadowRoot;
+    var root5 = root4.querySelector("d2l-tabs d2l-my-courses-content");
+    var root6 = root5.shadowRoot;
+    var root7 = root6.querySelector("d2l-my-courses-card-grid");
+    var root8 = root7.shadowRoot;
+    var root9 = root8.querySelectorAll("d2l-enrollment-card");
 
-    var seed = Math.floor(Math.random() * gooseLinkArray.length);
-    var targetURL = gooseLinkArray[seed];
-    gooseLinkArray.splice(seed,1);
+    root9.forEach(function (enrollmentCard) {
 
-    var root10 = enrollmentCard.shadowRoot;
-    var root11 = root10.querySelector("d2l-organization-image");
-    var root12 = root11.shadowRoot;
-    var root13 = root12.querySelector("d2l-course-image");
-    var root14 = root13.shadowRoot;
-    var desiredImage = root14.querySelector("img");
-    desiredImage.src = targetURL;
-    desiredImage.srcset = `${targetURL} 1080w`;
+        var seed = Math.floor(Math.random() * gooseLinkArray.length);
+        var targetURL = gooseLinkArray[seed];
+        gooseLinkArray.splice(seed,1);
 
+        var root10 = enrollmentCard.shadowRoot;
+        var root11 = root10.querySelector("d2l-organization-image");
+        var root12 = root11.shadowRoot;
+        var root13 = root12.querySelector("d2l-course-image");
+        var root14 = root13.shadowRoot;
+        var desiredImage = root14.querySelector("img");
+
+        desiredImage.src = targetURL;
+        desiredImage.srcset = `${targetURL} 1080w`;
+    });
+}
+
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    if (request.toggle) {
+        gooseItUp();
+        alert("🪿🦆💬 fact #1: there is no way to ungoose a website");
+    } else {
+        console.log("hoonky");
+    }
 });
-
-/*
-var root10 = root9.shadowRoot;
-var root11 = root10.querySelector("d2l-organization-image");
-var root12 = root11.shadowRoot;
-var root13 = root12.querySelector("d2l-course-image");
-var root14 = root13.shadowRoot;
-var desiredImage = root14.querySelector("img");
-alert(desiredImage);
-desiredImage.src = newImageUrlSrc;
-desiredImage.srcset = newImageUrlSrcSet;
-*/
-/*
-document.addEventListener('DOMContentLoaded', function() {
-    var mainBody = document.querySelector(".homepage-col-8"); // call root class
-    alert(mainBody);
-});
-*/
