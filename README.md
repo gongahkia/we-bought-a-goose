@@ -6,6 +6,10 @@ Adds geese to SMU elearn.
 
 ![](sample/we-bought-a-goose.jpg)
 
+## Screenshots
+
+![](sample/we-bought-a-goose-usage.png)
+
 ## Installation
 
 ### CLI
