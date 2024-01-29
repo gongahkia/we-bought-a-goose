@@ -2,7 +2,7 @@
 
 # We Bought A Goose
 
-Adds geese to SMU elearn.
+Browser extension that adds geese to SMU elearn.
 
 ![](sample/we-bought-a-goose.jpg)
 
