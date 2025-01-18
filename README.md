@@ -2,9 +2,11 @@
 
 # We Bought A Goose
 
-Browser extension that adds geese to SMU elearn.
+Browser extension that replaces all images on [eLearn-SMU](https://elearn.smu.edu.sg/) with geese.
 
-![](sample/we-bought-a-goose.jpg)
+<div align="center">
+  <img height="400px" src="sample/we-bought-a-goose.jpg"></img>
+</div>
 
 ## Screenshots
 
